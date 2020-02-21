@@ -3,7 +3,7 @@
 ## Exercise I
 
 a)
-
+The runtime complexity of this algorithm is O(n). a gets incremented at every turn by the sum of itself an n^2, so at a certain point it will get to n^3 (i.e (a=n) * n * n )which matches the polynomial order of n in the loop.
 
 b)
 The runtime complexity of this block of code is O(n log n). The outer loop runs in linear time (i.e n times) while the inner loop runs in logarithmic time O(log n) given that it is getting doubly incremented at each turn. If you multiply the runtime complexities of the loops, you get a runtime complexity of O(n log n) (linearithmic). 
