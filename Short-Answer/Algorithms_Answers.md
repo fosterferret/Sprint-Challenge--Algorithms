@@ -17,11 +17,12 @@ My proposed algorithm implements a binary search approach where the egg is dropp
 
 The proposed algorith has a logarithmic runtime complexity of O(log n)
 
-### def minimize_broken_eggs_on_dropping(floors_list):
+```
+def minimize_broken_eggs_on_dropping(floors_list):
     # find middle floor
     mid_floor = len(floors_list) // 2
 
-    # run code while there are more than two floors remaining
+    # run code while there are at least 3 floors left
     while len(floors) > 2:
 
         # if the egg breaks, eliminate higher floors
@@ -33,3 +34,4 @@ The proposed algorith has a logarithmic runtime complexity of O(log n)
             return minimize_broken_eggs_on_dropping(floors[mid_floor + 1:])
 
     # return the higher floor in the two floors left
+```
